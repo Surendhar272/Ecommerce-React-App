@@ -4,6 +4,19 @@ import "../Assets/Css/Navigation.css";
 // Importing react
 import React from "react";
 
+import {
+  Badge,
+  Container,
+  Button,
+  FormControl,
+  Navbar,
+  Nav,
+  Form,
+  InputGroup,
+  Image,
+} from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 // Importing hooks for get and send data to store
 import { useDispatch, useSelector } from "react-redux";
 
@@ -34,6 +47,7 @@ function Navigation() {
   return (
     <div className="nav">
       <div className="left">
+        <div className="fw-bolder">ShopMart</div>
         {/* Button for all products page */}
         <button
           className="navButton"
